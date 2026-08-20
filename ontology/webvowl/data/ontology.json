@@ -1,0 +1,2906 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/bot", "https://saref.etsi.org/core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://brickschema.org/schema/Brick", "https://w3id.org/posifit/pf", "http://www.w3.org/2000/01/rdf-schema", "https://brickschema.org/schema/Brick/ref", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2006/vcard/ns" ],
+    "iri" : "https://w3id.org/posifit",
+    "version" : "0.1.0",
+    "author" : [ "PosiFit consortium" ],
+    "description" : {
+      "en" : "The PosiFit ontology is intended to describe positive-energy building retrofit projects. It is designed around the reuse and alignment of established domain ontologies. BOT is used for spatial structure, SAREF for devices and measurements, Brick for point roles and timeseries references, QUDT for units, and vCard and WGS84 for addresses and coordinates. Terms are introduced in the pf: namespace only where PosiFit requires concepts that are not covered by these existing vocabularies. This documentation therefore focuses on the PosiFit-specific classes and properties, together with the alignments that connect them to the ontologies they reuse."
+    },
+    "labels" : {
+      "en" : "PosiFit ontology"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "PosiFit consortium",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "© PosiFit consortium — licensed under CC BY 4.0.",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "PosiFit",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "A vocabulary for describing positive-energy building retrofits: the spatial breakdown of a pilot site and the sensing equipment, measurement points and timeseries references attached to it.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "owl:Class"
+  }, {
+    "id" : "165",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://brickschema.org/schema/Brick#Energy_System",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Energy_System"
+    },
+    "subClasses" : [ "14", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Electrical_Equipment",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Electrical_Equipment"
+    },
+    "subClasses" : [ "24" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#HybridInverter",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Power conversion unit serving a PV array and a battery together, converting between the DC of both and the AC of the building supply.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HybridInverter",
+      "en" : "hybrid inverter"
+    },
+    "comment" : {
+      "en" : "Equipment, not a system: it is one box, and it is brick:isPartOf both the PV system and the battery system. Brick has no hybrid class, so brick:Photovoltaic_Inverter is the narrowest honest parent — narrowed further here by also serving storage."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "43", "44", "45", "46", "26", "47", "23" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#WindowOpenCloseState",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Whether a window stands open or closed.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindowOpenCloseState",
+      "en" : "window open/close state"
+    },
+    "comment" : {
+      "en" : "saref:OpenCloseState was deprecated in SAREF V3.2.1, its history note directing such conditions to be modelled against saref:State instead."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Space",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Space"
+    },
+    "subClasses" : [ "51", "52" ],
+    "attributes" : [ "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/bot#Space",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Space"
+    },
+    "subClasses" : [ "51", "52" ],
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ChargeDischargePower",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Signed instantaneous power at a battery system, positive while charging and negative while discharging.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChargeDischargePower",
+      "en" : "charge/discharge power"
+    },
+    "attributes" : [ "external" ],
+    "id" : "54",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#StateOfCharge",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Energy currently stored in a battery system as a fraction of the energy it holds when full.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StateOfCharge",
+      "en" : "state of charge"
+    },
+    "comment" : {
+      "en" : "Distinct from pf:BatteryLevel, which is the remaining charge of a device's own cell — a housekeeping signal, not a storage asset's operating state."
+    },
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Photovoltaic_Inverter",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Photovoltaic_Inverter"
+    },
+    "subClasses" : [ "24" ],
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#Address",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Address"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#RoomComfortSensor",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Multi-sensor device mounted in a dwelling space, observing indoor air temperature, relative humidity and CO2 concentration.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RoomComfortSensor",
+      "en" : "room comfort sensor"
+    },
+    "comment" : {
+      "en" : "One device, three observed properties — no Brick match, since Brick models each measurement as its own single-quantity sensor point."
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "30", "12", "34", "37" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Illuminance",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Luminous flux per unit area incident on a surface at a monitored site, the measure a weather station reports for ambient daylight.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Illuminance",
+      "en" : "illuminance"
+    },
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Entity",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "14", "41", "24", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Sensor",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Sensor",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device measuring a physical property of a building space and reporting it to the PosiFit ingestion pipeline.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sensor",
+      "en" : "sensor"
+    },
+    "subClasses" : [ "16", "18", "32" ],
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "30", "12", "34" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#TemperatureSetpoint",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Target air temperature a controlling device is working towards — the commanded value, not an observation of the room.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TemperatureSetpoint",
+      "en" : "temperature setpoint"
+    },
+    "comment" : {
+      "en" : "Under pf:Temperature so it inherits the degree Celsius restriction; it is a temperature, distinguished by being controlled rather than observed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5", "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#SmartRadiatorValve",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Valve",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Thermostatic radiator valve with a motorised actuator and an onboard radio, throttling the flow through one radiator against a temperature setpoint while reporting the conditions it senses in the room.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SmartRadiatorValve",
+      "en" : "smart thermostatic radiator valve"
+    },
+    "comment" : {
+      "en" : "Dual role: primarily an actuator (saref:controls the setpoint and its own position), but it senses too, so sensing.axioms.ttl also makes it a pf:Sensor — an edge the registry cannot carry, since align targets may only point at vendored prefixes. saref:Sensor and saref:FeatureOfInterest are repeated here because that pf:Sensor edge is invisible without a reasoner."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "30", "12", "66", "34", "37" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Building",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building"
+    },
+    "subClasses" : [ "68" ],
+    "attributes" : [ "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ConsumptionMeter",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Electrical_Meter",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Electricity meter of a dwelling unit, observing active power, active energy, voltage, current and frequency.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConsumptionMeter",
+      "en" : "consumption meter"
+    },
+    "subClasses" : [ "29" ],
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "30", "12", "69" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Apartment",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Self-contained dwelling unit on a floor, treated as the smallest billable and separately monitored space.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Apartment",
+      "en" : "apartment"
+    },
+    "comment" : {
+      "en" : "A genuinely new concept, not equivalent to either parent: narrower than bot:Space and brick:Space, which both cover single rooms too. Containment uses the BOT topology properties (bot:hasStorey, bot:hasSpace) rather than PosiFit-minted equivalents."
+    },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "53", "70", "50" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#System",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "System"
+    },
+    "subClasses" : [ "14", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Voltage",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Electric potential difference at the metering point.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Voltage",
+      "en" : "voltage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Point",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "subClasses" : [ "41" ],
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/bot#Storey",
+    "equivalent" : [ "75" ],
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Storey"
+    },
+    "subClasses" : [ "75" ],
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#WeatherStation",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Weather_Station",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device mounted at a monitored site, observing the outdoor conditions the building is exposed to.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WeatherStation",
+      "en" : "weather station"
+    },
+    "comment" : {
+      "en" : "Not a pf:Sensor: it is a multi-quantity outdoor station rather than a device observing one property of one space, and SAREF's own hierarchy has no station class between Device and Sensor."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "30", "12" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Site",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Site",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Pilot location PosiFit monitors, containing one or more buildings and georeferenced by a zero point.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Site",
+      "en" : "site"
+    },
+    "comment" : {
+      "en" : "Narrower than bot:Site, not equivalent: spatial.axioms.ttl requires a wgs84 zero point, which BOT leaves optional."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "70", "77" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Battery_Energy_Storage_System",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Battery_Energy_Storage_System"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#PV_Generation_System",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PV_Generation_System"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#PVSystem",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Photovoltaic generation installation on a building, converting incident solar radiation into electricity fed to the building or to storage.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PVSystem",
+      "en" : "PV system"
+    },
+    "comment" : {
+      "en" : "The array, its mounting and its share of the conversion chain, taken as one system — panel-level detail is out of scope for the pilot."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "30", "71", "80", "13", "44", "45", "81", "26", "82", "2" ]
+  }, {
+    "iri" : "https://saref.etsi.org/core/Sensor",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sensor"
+    },
+    "subClasses" : [ "16", "18", "37", "32" ],
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#WindSpeed",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Speed of the air moving past a monitored site.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindSpeed",
+      "en" : "wind speed"
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Temperature",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Dry-bulb temperature of monitored air, indoors or outdoors.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Temperature",
+      "en" : "temperature"
+    },
+    "subClasses" : [ "4", "7", "9" ],
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://saref.etsi.org/core/State",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State"
+    },
+    "subClasses" : [ "89", "48" ],
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#BatteryStorageSystem",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Electrochemical storage installation serving a building, charging from the supply or from on-site generation and discharging back into it, metered and reported as one installation rather than cell by cell.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BatteryStorageSystem",
+      "en" : "battery storage system"
+    },
+    "comment" : {
+      "en" : "Not a pf:Sensor or saref:Device: Brick models storage as a system — a collection of equipment — and the streams hang off the installation, not off a cell. bot:Element is what places it inside a building; saref:FeatureOfInterest is what lets it carry its nameplate rating as a saref:hasProperty, that property's domain."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "30", "71", "79", "13", "45", "44", "81", "96", "26", "2" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#GeneratedActiveEnergy",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Cumulative electrical energy delivered by an on-site generation system.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeneratedActiveEnergy",
+      "en" : "generated active energy"
+    },
+    "comment" : {
+      "en" : "Sibling of pf:ActiveEnergy for the same reason as pf:GeneratedActivePower."
+    },
+    "attributes" : [ "external" ],
+    "id" : "97",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ActiveEnergy",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Cumulative electrical energy consumed by a monitored unit.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActiveEnergy",
+      "en" : "active energy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Inverter",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Inverter"
+    },
+    "subClasses" : [ "24" ],
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/bot#Zone",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Zone"
+    },
+    "subClasses" : [ "75", "68", "76", "51", "52" ],
+    "attributes" : [ "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ChargedEnergy",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Cumulative electrical energy a battery system has taken in.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChargedEnergy",
+      "en" : "charged energy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "101",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ReactivePower",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Power oscillating between source and reactive load at the metering point, doing no net work.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReactivePower",
+      "en" : "reactive power"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Floor",
+    "equivalent" : [ "74" ],
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Floor",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Horizontal level of a building, containing the apartments and common areas at that height.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Floor",
+      "en" : "floor"
+    },
+    "comment" : {
+      "en" : "Direct reuse — equivalent to bot:Storey, minted only to carry PosiFit annotations."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "75",
+    "superClasses" : [ "70", "74" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Site",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Site"
+    },
+    "subClasses" : [ "76" ],
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#DormRoom",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Study-bedroom in a student residence, occupied under a tenancy but not self-contained — sanitary and cooking facilities are shared with the floor rather than contained within the room.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DormRoom",
+      "en" : "dorm room"
+    },
+    "comment" : {
+      "en" : "Sibling of pf:Apartment, not a subclass: it is the smallest separately monitored space, but it is neither self-contained nor separately billed, so pf:Apartment's definition does not hold of it."
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "53", "70", "50" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Frequency",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Frequency of the alternating supply at the metering point.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Frequency",
+      "en" : "frequency"
+    },
+    "attributes" : [ "external" ],
+    "id" : "117",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick/ref#TimeseriesReference",
+    "baseIri" : "https://brickschema.org/schema/Brick/ref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeseriesReference"
+    },
+    "attributes" : [ "external" ],
+    "id" : "118"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Energy_Storage_System",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Energy_Storage_System"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Window",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Openable glazed opening in the envelope of a monitored space, the real world entity whose open/close state a window sensor observes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Window",
+      "en" : "window"
+    },
+    "comment" : {
+      "en" : "No external alignment: Brick has no plain Window class, only Automatic_Tint_Window, and IFC is not vendored."
+    },
+    "attributes" : [ "external" ],
+    "id" : "137",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#BatteryLevel",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Remaining charge of a device's battery as a fraction of its capacity.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BatteryLevel",
+      "en" : "battery level"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ActivePower",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Instantaneous electrical power drawn by a monitored unit.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActivePower",
+      "en" : "active power"
+    },
+    "attributes" : [ "external" ],
+    "id" : "139",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#OutdoorAirTemperature",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Dry-bulb temperature of the outdoor air at a monitored site.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OutdoorAirTemperature",
+      "en" : "outdoor air temperature"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "5", "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ApparentPower",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Product of RMS voltage and RMS current at the metering point, the vector sum of active and reactive power.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ApparentPower",
+      "en" : "apparent power"
+    },
+    "attributes" : [ "external" ],
+    "id" : "145",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ElectricCurrent",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Electric current flowing through the metering point.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricCurrent",
+      "en" : "electric current"
+    },
+    "attributes" : [ "external" ],
+    "id" : "148",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#Building",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Building",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Independent structure with a roof and walls, hosting the dwellings and systems PosiFit monitors.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Building",
+      "en" : "building"
+    },
+    "comment" : {
+      "en" : "Narrower than bot:Building, not equivalent: spatial.axioms.ttl requires a postal address, which BOT leaves optional. The equivalence it carried until then would have propagated that requirement to every bot:Building."
+    },
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "67", "70" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Collection",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Collection"
+    },
+    "subClasses" : [ "14", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://saref.etsi.org/core/Actuator",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actuator"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://saref.etsi.org/core/Meter",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Meter"
+    },
+    "subClasses" : [ "20", "29" ],
+    "attributes" : [ "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "22",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "49", "55" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://saref.etsi.org/core/Property",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "subClasses" : [ "103", "134", "163", "63", "115", "139", "125", "72", "65", "7", "145", "148", "86", "5", "117", "98", "127", "97", "4", "164", "54", "112", "9", "165", "101" ],
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Equipment",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Equipment"
+    },
+    "subClasses" : [ "24" ],
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#WindowSensor",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Contact_Sensor",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Contact device mounted on a window, observing whether the window it is fitted to stands open or closed.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WindowSensor",
+      "en" : "window sensor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "30", "12", "34", "37" ]
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Energy_Generation_System",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Energy_Generation_System"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#MeasurementPoint",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Named stream of measurements a device produces for one observed quantity, carrying the external reference a client needs to fetch the values themselves — the graph holds the metadata, not the timeseries.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MeasurementPoint",
+      "en" : "measurement point"
+    },
+    "comment" : {
+      "en" : "Narrower than brick:Point, not equivalent: sensing.axioms.ttl requires a measured quantity and a ref:TimeseriesReference, both optional in Brick. One point per quantity, so a pf:RoomComfortSensor has three."
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "45", "26", "73" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#CO2Concentration",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Concentration of carbon dioxide in the air of a monitored space.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CO2Concentration",
+      "en" : "CO2 concentration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#DischargedEnergy",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Cumulative electrical energy a battery system has given back.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DischargedEnergy",
+      "en" : "discharged energy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "164",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#GeneratedActivePower",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Instantaneous electrical power delivered by an on-site generation system.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeneratedActivePower",
+      "en" : "generated active power"
+    },
+    "comment" : {
+      "en" : "A sibling of pf:ActivePower, not a subclass: that class is defined as the power *drawn* by a monitored unit, and generation is the opposite sign of the same quantity."
+    },
+    "attributes" : [ "external" ],
+    "id" : "165",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#RatedEnergyCapacity",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Nameplate energy a storage system holds when full, as declared by its manufacturer — a fixed rating, not an observation.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RatedEnergyCapacity",
+      "en" : "rated energy capacity"
+    },
+    "comment" : {
+      "en" : "Exists to give the pf:ratedEnergyCapacity number its unit: quantities carry units in this ontology, datatype properties do not."
+    },
+    "attributes" : [ "external" ],
+    "id" : "163",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#PowerFactor",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Ratio of active to apparent power at the metering point, between zero and one.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PowerFactor",
+      "en" : "power factor"
+    },
+    "comment" : {
+      "en" : "Dimensionless — its unit restriction is unit:UNITLESS."
+    },
+    "attributes" : [ "external" ],
+    "id" : "134",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#RelativeHumidity",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Ratio of the water vapour present in the air to the amount that would saturate it at the same temperature.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RelativeHumidity",
+      "en" : "relative humidity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "125",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#HeatingOnOffState",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Whether the radiator a valve controls is currently calling for heat.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HeatingOnOffState",
+      "en" : "heating on/off state"
+    },
+    "attributes" : [ "external" ],
+    "id" : "89",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "attributes" : [ "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://saref.etsi.org/core/FeatureOfInterest",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FeatureOfInterest"
+    },
+    "subClasses" : [ "11", "16", "137", "18", "20", "14", "37", "1", "29", "32" ],
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Class",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "subClasses" : [ "14", "41", "24", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#Electrical_System",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Electrical_System"
+    },
+    "subClasses" : [ "14", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://saref.etsi.org/core/Device",
+    "baseIri" : "https://saref.etsi.org/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device"
+    },
+    "subClasses" : [ "11", "16", "18", "20", "37", "29", "32" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/bot#Element",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Element"
+    },
+    "subClasses" : [ "14", "24", "1" ],
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ValvePosition",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Degree to which a valve stands open, from fully closed to fully open.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ValvePosition",
+      "en" : "valve position"
+    },
+    "attributes" : [ "external" ],
+    "id" : "112",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#IndoorAirTemperature",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Dry-bulb temperature of the air inside a monitored space.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IndoorAirTemperature",
+      "en" : "indoor air temperature"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "5", "55" ]
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ElectricityAnalyzer",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "instances" : 0,
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://brickschema.org/schema/Brick#Electrical_Meter",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Panel-mounted meter observing the five quantities a consumption meter does and, in addition, the power quality of the supply — reactive and apparent power and the power factor between them.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricityAnalyzer",
+      "en" : "electricity analyzer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29",
+    "superClasses" : [ "30", "12", "20", "69" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "105",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "107",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "108",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "109",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "110",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "111",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "113",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "114",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "119",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "121",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "126",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "128",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "129",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "130",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "131",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "132",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "133",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "191",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "192",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "193",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "194",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "195",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "196",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "197",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "198",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "199",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "5",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "12",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "12",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://saref.etsi.org/core/isMeasuredIn",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "isMeasuredIn"
+    },
+    "domain" : "22",
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "range" : "26",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "30",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "34",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "34",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "34",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "34",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "26",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "26",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "26",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#measures",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "range" : "57",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a measurement point to the single quantity its stream carries.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measures",
+      "en" : "measures"
+    },
+    "superproperty" : [ "58" ],
+    "domain" : "41",
+    "comment" : {
+      "en" : "Narrower than saref:observes, which SAREF documents for devices, functions and commands — a point is none of those. The device keeps its own saref:observes triples; this says which of them a given stream is. No range: here — a point carries a saref:Property or a saref:State, and `range:` takes a single CURIE. The union sits in sensing.axioms.ttl, mirroring saref:observes, which SAREF leaves range-free for the same reason."
+    },
+    "attributes" : [ "functional", "object", "external" ],
+    "id" : "56"
+  }, {
+    "range" : "30",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "30",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "30",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "61"
+  }, {
+    "range" : "30",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#installedIn",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "range" : "70",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a device to the zone it is physically mounted in.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "installedIn",
+      "en" : "installed in"
+    },
+    "domain" : "12",
+    "attributes" : [ "functional", "object", "external" ],
+    "id" : "78"
+  }, {
+    "range" : "70",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "70",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "70",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "70",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "49",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "49",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "43",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "44",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "44",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "44",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "70",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "12",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "12",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "12",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "11",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "11",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#hasPoint",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasPoint"
+    },
+    "domain" : "11",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#hasPoint",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasPoint"
+    },
+    "domain" : "16",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://saref.etsi.org/core/controls",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "controls"
+    },
+    "domain" : "16",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "11",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "16",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://saref.etsi.org/core/controls",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "controls"
+    },
+    "domain" : "16",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "16",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "16",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "16",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://w3id.org/bot#hasZeroPoint",
+    "baseIri" : "https://w3id.org/bot",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "hasZeroPoint"
+    },
+    "domain" : "76",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#hasPoint",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasPoint"
+    },
+    "domain" : "37",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://w3id.org/posifit/pf#ratedEnergyCapacity",
+    "baseIri" : "https://w3id.org/posifit/pf",
+    "range" : "123",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Nameplate energy capacity of a storage system, in kilowatt-hours.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ratedEnergyCapacity",
+      "en" : "rated energy capacity"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The bare number. Its unit lives on pf:RatedEnergyCapacity, which sensing.axioms.ttl hangs off every battery system with saref:hasProperty."
+    },
+    "attributes" : [ "datatype", "functional", "external" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "16",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "32",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#hasPoint",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasPoint"
+    },
+    "domain" : "14",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "128"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "32",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "32",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "29",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick/ref#hasTimeseriesReference",
+    "baseIri" : "https://brickschema.org/schema/Brick/ref",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "hasTimeseriesReference"
+    },
+    "domain" : "41",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "29",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "133"
+  }, {
+    "range" : "37",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "37",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "37",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "45",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "45",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "45",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "range" : "45",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "53",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "53",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "46",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "96",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "50",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "50",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "77",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "13",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "23",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "18",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#hasPoint",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasPoint"
+    },
+    "domain" : "18",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "157"
+  }, {
+    "range" : "55",
+    "domain" : "145",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "55",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "range" : "55",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "55",
+    "domain" : "148",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "55",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "55",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "55",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "55",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "55",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "55",
+    "domain" : "139",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "55",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "71",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "71",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "55",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "55",
+    "domain" : "103",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "69",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "20",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "69",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "81",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "81",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "67",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "66",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "30",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "30",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "30",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "30",
+    "domain" : "137",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "74",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "80",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "79",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#hasAddress",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasAddress"
+    },
+    "domain" : "68",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "190"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "20",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "191"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "20",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "20",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#hasPoint",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasPoint"
+    },
+    "domain" : "20",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "20",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "195"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "148",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "20",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "196"
+  }, {
+    "iri" : "https://saref.etsi.org/core/observes",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "observes"
+    },
+    "domain" : "29",
+    "subproperty" : [ "56" ],
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://saref.etsi.org/core/hasProperty",
+    "baseIri" : "https://saref.etsi.org/core",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "hasProperty"
+    },
+    "domain" : "1",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "198"
+  }, {
+    "iri" : "https://brickschema.org/schema/Brick#hasPoint",
+    "baseIri" : "https://brickschema.org/schema/Brick",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasPoint"
+    },
+    "domain" : "1",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "199"
+  }, {
+    "range" : "47",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "55",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "82",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "73",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "55",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "55",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "55",
+    "domain" : "165",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "55",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "55",
+    "domain" : "164",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "55",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "55",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "55",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "55",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "55",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "55",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  } ]
+}
