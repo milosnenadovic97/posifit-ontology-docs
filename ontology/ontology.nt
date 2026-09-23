@@ -1,0 +1,942 @@
+<https://w3id.org/posifit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/posifit> <http://purl.org/dc/terms/abstract> "A vocabulary for describing positive-energy building retrofits. It covers the spatial breakdown of a monitored site and the sensing equipment, measurement points and timeseries references attached to it."@en .
+<https://w3id.org/posifit> <http://purl.org/dc/terms/creator> "PosiFit consortium"@en .
+<https://w3id.org/posifit> <http://purl.org/dc/terms/description> "The PosiFit ontology is intended to describe positive-energy building retrofit projects. It is designed around the reuse and alignment of established domain ontologies. BOT is used for spatial structure, SAREF for devices and measurements, Brick for point roles and timeseries references, QUDT for units, and vCard and WGS84 for addresses and coordinates. Terms are introduced in the pf: namespace only where a concept is not covered by these existing vocabularies. This documentation therefore focuses on the PosiFit-specific classes and properties, together with the alignments that connect them to the ontologies they reuse."@en .
+<https://w3id.org/posifit> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/posifit> <http://purl.org/dc/terms/publisher> "PosiFit"@en .
+<https://w3id.org/posifit> <http://purl.org/dc/terms/rights> "© PosiFit consortium. Licensed under CC BY 4.0."@en .
+<https://w3id.org/posifit> <http://www.w3.org/2000/01/rdf-schema#label> "PosiFit ontology"@en .
+<https://w3id.org/posifit> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2006/vcard/ns#hasAddress
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://brickschema.org/schema/Brick#hasPoint
+<https://brickschema.org/schema/Brick#hasPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://brickschema.org/schema/Brick/ref#hasTimeseriesReference
+<https://brickschema.org/schema/Brick/ref#hasTimeseriesReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://saref.etsi.org/core/controls
+<https://saref.etsi.org/core/controls> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://saref.etsi.org/core/hasProperty
+<https://saref.etsi.org/core/hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://saref.etsi.org/core/isMeasuredIn
+<https://saref.etsi.org/core/isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://saref.etsi.org/core/observes
+<https://saref.etsi.org/core/observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/bot#hasZeroPoint
+<https://w3id.org/bot#hasZeroPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/posifit/pf#measures
+<https://w3id.org/posifit/pf#measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/posifit/pf#measures> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://saref.etsi.org/core/observes> .
+<https://w3id.org/posifit/pf#measures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/posifit/pf#measures> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/posifit/pf#MeasurementPoint> .
+<https://w3id.org/posifit/pf#measures> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://saref.etsi.org/core/State> .
+<https://saref.etsi.org/core/State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://saref.etsi.org/core/Property> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#measures> <http://www.w3.org/2000/01/rdf-schema#label> "measures"@en .
+<https://w3id.org/posifit/pf#measures> <http://www.w3.org/2004/02/skos/core#definition> "Links a measurement point to the quantity its stream carries."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/posifit/pf#billingPeriod
+<https://w3id.org/posifit/pf#billingPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/posifit/pf#billingPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/posifit/pf#billingPeriod> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/posifit/pf#MeasurementPoint> .
+<https://w3id.org/posifit/pf#billingPeriod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/posifit/pf#billingPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "billing period"@en .
+<https://w3id.org/posifit/pf#billingPeriod> <http://www.w3.org/2004/02/skos/core#definition> "Billing period a measurement point's count covers, relative to the present."@en .
+# 
+# https://w3id.org/posifit/pf#hasPilotCode
+<https://w3id.org/posifit/pf#hasPilotCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/posifit/pf#hasPilotCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/posifit/pf#hasPilotCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/posifit/pf#Site> .
+<https://w3id.org/posifit/pf#hasPilotCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/posifit/pf#hasPilotCode> <http://www.w3.org/2000/01/rdf-schema#label> "has pilot code"@en .
+<https://w3id.org/posifit/pf#hasPilotCode> <http://www.w3.org/2004/02/skos/core#definition> "Short code identifying a site."@en .
+# 
+# https://w3id.org/posifit/pf#hasTenantCode
+<https://w3id.org/posifit/pf#hasTenantCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/posifit/pf#hasTenantCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/posifit/pf#hasTenantCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/posifit/pf#TenantSpace> .
+<https://w3id.org/posifit/pf#hasTenantCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/posifit/pf#hasTenantCode> <http://www.w3.org/2000/01/rdf-schema#label> "has tenant code"@en .
+<https://w3id.org/posifit/pf#hasTenantCode> <http://www.w3.org/2004/02/skos/core#definition> "Code identifying a tenant space within its site."@en .
+# 
+# https://w3id.org/posifit/pf#ratedEnergyCapacity
+<https://w3id.org/posifit/pf#ratedEnergyCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/posifit/pf#ratedEnergyCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/posifit/pf#ratedEnergyCapacity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/posifit/pf#BatteryStorageSystem> .
+<https://w3id.org/posifit/pf#ratedEnergyCapacity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/posifit/pf#ratedEnergyCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "rated energy capacity"@en .
+<https://w3id.org/posifit/pf#ratedEnergyCapacity> <http://www.w3.org/2004/02/skos/core#definition> "Nameplate energy capacity of a storage system, in kilowatt-hours."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#Point
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/vcard/ns#Address
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Battery_Energy_Storage_System
+<https://brickschema.org/schema/Brick#Battery_Energy_Storage_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Class
+<https://brickschema.org/schema/Brick#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Collection
+<https://brickschema.org/schema/Brick#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Electrical_Equipment
+<https://brickschema.org/schema/Brick#Electrical_Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Electrical_System
+<https://brickschema.org/schema/Brick#Electrical_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Energy_Generation_System
+<https://brickschema.org/schema/Brick#Energy_Generation_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Energy_Storage_System
+<https://brickschema.org/schema/Brick#Energy_Storage_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Energy_System
+<https://brickschema.org/schema/Brick#Energy_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Entity
+<https://brickschema.org/schema/Brick#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Equipment
+<https://brickschema.org/schema/Brick#Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Inverter
+<https://brickschema.org/schema/Brick#Inverter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#PV_Generation_System
+<https://brickschema.org/schema/Brick#PV_Generation_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Photovoltaic_Inverter
+<https://brickschema.org/schema/Brick#Photovoltaic_Inverter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Point
+<https://brickschema.org/schema/Brick#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Room
+<https://brickschema.org/schema/Brick#Room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#Space
+<https://brickschema.org/schema/Brick#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick#System
+<https://brickschema.org/schema/Brick#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://brickschema.org/schema/Brick/ref#TimeseriesReference
+<https://brickschema.org/schema/Brick/ref#TimeseriesReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/Actuator
+<https://saref.etsi.org/core/Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/Device
+<https://saref.etsi.org/core/Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/FeatureOfInterest
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/Meter
+<https://saref.etsi.org/core/Meter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/Property
+# 
+# https://saref.etsi.org/core/Sensor
+<https://saref.etsi.org/core/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/State
+# 
+# https://w3id.org/bot#Building
+<https://w3id.org/bot#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Site
+<https://w3id.org/bot#Site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Space
+<https://w3id.org/bot#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/bot#Storey
+<https://w3id.org/bot#Storey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Storey> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/posifit/pf#Floor> .
+# 
+# https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/posifit/pf#ActiveEnergy
+<https://w3id.org/posifit/pf#ActiveEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/KiloW-HR> .
+<http://qudt.org/vocab/unit/KiloW-HR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "active energy"@en .
+<https://w3id.org/posifit/pf#ActiveEnergy> <http://www.w3.org/2004/02/skos/core#definition> "Cumulative electrical energy consumed by a unit."@en .
+# 
+# https://w3id.org/posifit/pf#ActivePower
+<https://w3id.org/posifit/pf#ActivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ActivePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ActivePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/W> .
+<http://qudt.org/vocab/unit/W> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ActivePower> <http://www.w3.org/2000/01/rdf-schema#label> "active power"@en .
+<https://w3id.org/posifit/pf#ActivePower> <http://www.w3.org/2004/02/skos/core#definition> "Instantaneous electrical power drawn by a unit."@en .
+# 
+# https://w3id.org/posifit/pf#AirTemperature
+<https://w3id.org/posifit/pf#AirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#AirTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#AirTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/DEG_C> .
+<http://qudt.org/vocab/unit/DEG_C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#AirTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "air temperature"@en .
+<https://w3id.org/posifit/pf#AirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Dry-bulb temperature of air."@en .
+# 
+# https://w3id.org/posifit/pf#Apartment
+<https://w3id.org/posifit/pf#Apartment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Apartment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#TenantSpace> .
+<https://w3id.org/posifit/pf#Apartment> <http://www.w3.org/2000/01/rdf-schema#label> "apartment"@en .
+<https://w3id.org/posifit/pf#Apartment> <http://www.w3.org/2004/02/skos/core#definition> "A self-contained dwelling unit on a floor, billed and monitored separately."@en .
+# 
+# https://w3id.org/posifit/pf#ApparentPower
+<https://w3id.org/posifit/pf#ApparentPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ApparentPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ApparentPower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/V-A> .
+<http://qudt.org/vocab/unit/V-A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ApparentPower> <http://www.w3.org/2000/01/rdf-schema#label> "apparent power"@en .
+<https://w3id.org/posifit/pf#ApparentPower> <http://www.w3.org/2004/02/skos/core#definition> "Product of RMS voltage and RMS current at a metering point, the vector sum of active and reactive power."@en .
+# 
+# https://w3id.org/posifit/pf#Bathroom
+<https://w3id.org/posifit/pf#Bathroom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Bathroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/posifit/pf#Bathroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/posifit/pf#Bathroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#Room> .
+<https://w3id.org/posifit/pf#Bathroom> <http://www.w3.org/2000/01/rdf-schema#label> "bathroom"@en .
+<https://w3id.org/posifit/pf#Bathroom> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Restroom> .
+<https://w3id.org/posifit/pf#Bathroom> <http://www.w3.org/2004/02/skos/core#definition> "A room of a dwelling containing a bath or shower, and usually a washbasin and a toilet."@en .
+# 
+# https://w3id.org/posifit/pf#BatteryLevel
+<https://w3id.org/posifit/pf#BatteryLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#BatteryLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#BatteryLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/PERCENT> .
+<http://qudt.org/vocab/unit/PERCENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#BatteryLevel> <http://www.w3.org/2000/01/rdf-schema#label> "battery level"@en .
+<https://w3id.org/posifit/pf#BatteryLevel> <http://www.w3.org/2004/02/skos/core#definition> "Remaining charge of a device's battery as a fraction of its capacity."@en .
+# 
+# https://w3id.org/posifit/pf#BatteryStorageSystem
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Battery_Energy_Storage_System> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Class> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Collection> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Electrical_System> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Energy_Storage_System> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Energy_System> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Entity> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#System> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#MeasurementPoint> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick#hasPoint> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#RatedEnergyCapacity> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasProperty> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2000/01/rdf-schema#label> "battery storage system"@en .
+<https://w3id.org/posifit/pf#BatteryStorageSystem> <http://www.w3.org/2004/02/skos/core#definition> "An electrochemical storage installation serving a building, charging from the supply or from on-site generation and discharging back into it."@en .
+# 
+# https://w3id.org/posifit/pf#Building
+<https://w3id.org/posifit/pf#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Building> .
+<https://w3id.org/posifit/pf#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/posifit/pf#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2006/vcard/ns#Address> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#hasAddress> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#Building> <http://www.w3.org/2000/01/rdf-schema#label> "building"@en .
+<https://w3id.org/posifit/pf#Building> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Building> .
+<https://w3id.org/posifit/pf#Building> <http://www.w3.org/2004/02/skos/core#definition> "An independent structure with a roof and walls, containing dwellings and building systems."@en .
+# 
+# https://w3id.org/posifit/pf#CO2Concentration
+<https://w3id.org/posifit/pf#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#CO2Concentration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#CO2Concentration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/PPM> .
+<http://qudt.org/vocab/unit/PPM> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#CO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 concentration"@en .
+<https://w3id.org/posifit/pf#CO2Concentration> <http://www.w3.org/2004/02/skos/core#definition> "Concentration of carbon dioxide in the air of a space."@en .
+# 
+# https://w3id.org/posifit/pf#ChargeDischargePower
+<https://w3id.org/posifit/pf#ChargeDischargePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ChargeDischargePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ChargeDischargePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/W> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ChargeDischargePower> <http://www.w3.org/2000/01/rdf-schema#label> "charge/discharge power"@en .
+<https://w3id.org/posifit/pf#ChargeDischargePower> <http://www.w3.org/2004/02/skos/core#definition> "Signed instantaneous power at a battery system, positive while charging and negative while discharging."@en .
+# 
+# https://w3id.org/posifit/pf#ChargedEnergy
+<https://w3id.org/posifit/pf#ChargedEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ChargedEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ChargedEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/KiloW-HR> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ChargedEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "charged energy"@en .
+<https://w3id.org/posifit/pf#ChargedEnergy> <http://www.w3.org/2004/02/skos/core#definition> "Cumulative electrical energy a battery system has taken in."@en .
+# 
+# https://w3id.org/posifit/pf#ConsumptionMeter
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Meter> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#MeasurementPoint> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick#hasPoint> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#ActiveEnergy> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#ActivePower> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2000/01/rdf-schema#label> "consumption meter"@en .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Electrical_Meter> .
+<https://w3id.org/posifit/pf#ConsumptionMeter> <http://www.w3.org/2004/02/skos/core#definition> "An electricity meter of a dwelling unit, measuring active power and active energy."@en .
+# 
+# https://w3id.org/posifit/pf#DischargedEnergy
+<https://w3id.org/posifit/pf#DischargedEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#DischargedEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#DischargedEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/KiloW-HR> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#DischargedEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "discharged energy"@en .
+<https://w3id.org/posifit/pf#DischargedEnergy> <http://www.w3.org/2004/02/skos/core#definition> "Cumulative electrical energy a battery system has given back."@en .
+# 
+# https://w3id.org/posifit/pf#DormRoom
+<https://w3id.org/posifit/pf#DormRoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#DormRoom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#TenantSpace> .
+<https://w3id.org/posifit/pf#DormRoom> <http://www.w3.org/2000/01/rdf-schema#label> "dorm room"@en .
+<https://w3id.org/posifit/pf#DormRoom> <http://www.w3.org/2004/02/skos/core#definition> "A study-bedroom in a student residence, sharing sanitary and cooking facilities with the floor."@en .
+# 
+# https://w3id.org/posifit/pf#ElectricCurrent
+<https://w3id.org/posifit/pf#ElectricCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ElectricCurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ElectricCurrent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/A> .
+<http://qudt.org/vocab/unit/A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ElectricCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "electric current"@en .
+<https://w3id.org/posifit/pf#ElectricCurrent> <http://www.w3.org/2004/02/skos/core#definition> "Electric current flowing through a metering point."@en .
+# 
+# https://w3id.org/posifit/pf#ElectricityAnalyzer
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Meter> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#ConsumptionMeter> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#ApparentPower> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#ElectricCurrent> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#Frequency> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#PowerFactor> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#ReactivePower> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#Voltage> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2000/01/rdf-schema#label> "electricity analyzer"@en .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Electrical_Meter> .
+<https://w3id.org/posifit/pf#ElectricityAnalyzer> <http://www.w3.org/2004/02/skos/core#definition> "A panel-mounted electricity meter, measuring what a consumption meter does and, in addition, voltage, current, frequency, reactive power, apparent power and power factor."@en .
+# 
+# https://w3id.org/posifit/pf#ExportedActiveEnergy
+<https://w3id.org/posifit/pf#ExportedActiveEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ExportedActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ExportedActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/KiloW-HR> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ExportedActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "exported active energy"@en .
+<https://w3id.org/posifit/pf#ExportedActiveEnergy> <http://www.w3.org/2004/02/skos/core#definition> "Cumulative electrical energy a unit has fed back into the supply."@en .
+# 
+# https://w3id.org/posifit/pf#Floor
+<https://w3id.org/posifit/pf#Floor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Floor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Storey> .
+<https://w3id.org/posifit/pf#Floor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/posifit/pf#Floor> <http://www.w3.org/2000/01/rdf-schema#label> "floor"@en .
+<https://w3id.org/posifit/pf#Floor> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Floor> .
+<https://w3id.org/posifit/pf#Floor> <http://www.w3.org/2004/02/skos/core#definition> "A horizontal level of a building, containing the spaces at that height."@en .
+# 
+# https://w3id.org/posifit/pf#Frequency
+<https://w3id.org/posifit/pf#Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Frequency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#Frequency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/HZ> .
+<http://qudt.org/vocab/unit/HZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "frequency"@en .
+<https://w3id.org/posifit/pf#Frequency> <http://www.w3.org/2004/02/skos/core#definition> "Frequency of the alternating supply at a metering point."@en .
+# 
+# https://w3id.org/posifit/pf#GeneratedActiveEnergy
+<https://w3id.org/posifit/pf#GeneratedActiveEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#GeneratedActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#GeneratedActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/KiloW-HR> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#GeneratedActiveEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "generated active energy"@en .
+<https://w3id.org/posifit/pf#GeneratedActiveEnergy> <http://www.w3.org/2004/02/skos/core#definition> "Cumulative electrical energy delivered by an on-site generation system."@en .
+# 
+# https://w3id.org/posifit/pf#GeneratedActivePower
+<https://w3id.org/posifit/pf#GeneratedActivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#GeneratedActivePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#GeneratedActivePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/W> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#GeneratedActivePower> <http://www.w3.org/2000/01/rdf-schema#label> "generated active power"@en .
+<https://w3id.org/posifit/pf#GeneratedActivePower> <http://www.w3.org/2004/02/skos/core#definition> "Instantaneous electrical power delivered by an on-site generation system."@en .
+# 
+# https://w3id.org/posifit/pf#HeatCostAllocation
+<https://w3id.org/posifit/pf#HeatCostAllocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#HeatCostAllocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#HeatCostAllocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/UNITLESS> .
+<http://qudt.org/vocab/unit/UNITLESS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#HeatCostAllocation> <http://www.w3.org/2000/01/rdf-schema#label> "heat cost allocation"@en .
+<https://w3id.org/posifit/pf#HeatCostAllocation> <http://www.w3.org/2004/02/skos/core#definition> "Heat given off by a radiator over a billing period, counted in the dimensionless units of a heat cost allocator."@en .
+# 
+# https://w3id.org/posifit/pf#HeatCostAllocator
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Meter> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#MeasurementPoint> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick#hasPoint> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#HeatCostAllocation> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#IndoorAirTemperature> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#RadiatorSurfaceTemperature> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2000/01/rdf-schema#label> "heat cost allocator"@en .
+<https://w3id.org/posifit/pf#HeatCostAllocator> <http://www.w3.org/2004/02/skos/core#definition> "A device mounted on a radiator, estimating the heat the radiator gives off from its surface temperature and the room air temperature, and counting it in units used to split a shared heating bill."@en .
+# 
+# https://w3id.org/posifit/pf#HeatingOnOffState
+<https://w3id.org/posifit/pf#HeatingOnOffState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#HeatingOnOffState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/State> .
+<https://w3id.org/posifit/pf#HeatingOnOffState> <http://www.w3.org/2000/01/rdf-schema#label> "heating on/off state"@en .
+<https://w3id.org/posifit/pf#HeatingOnOffState> <http://www.w3.org/2004/02/skos/core#definition> "Whether the radiator a valve controls is calling for heat."@en .
+# 
+# https://w3id.org/posifit/pf#HybridInverter
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Class> .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Electrical_Equipment> .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Entity> .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Equipment> .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Inverter> .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Photovoltaic_Inverter> .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2000/01/rdf-schema#label> "hybrid inverter"@en .
+<https://w3id.org/posifit/pf#HybridInverter> <http://www.w3.org/2004/02/skos/core#definition> "A power conversion unit serving a PV array and a battery together, converting between the DC of both and the AC of the building supply."@en .
+# 
+# https://w3id.org/posifit/pf#Illuminance
+<https://w3id.org/posifit/pf#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Illuminance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#Illuminance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/LUX> .
+<http://qudt.org/vocab/unit/LUX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#Illuminance> <http://www.w3.org/2000/01/rdf-schema#label> "illuminance"@en .
+<https://w3id.org/posifit/pf#Illuminance> <http://www.w3.org/2004/02/skos/core#definition> "Luminous flux per unit area incident on a surface at a site."@en .
+# 
+# https://w3id.org/posifit/pf#IndoorAirTemperature
+<https://w3id.org/posifit/pf#IndoorAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#IndoorAirTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#IndoorAirTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#AirTemperature> .
+<https://w3id.org/posifit/pf#IndoorAirTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "indoor air temperature"@en .
+<https://w3id.org/posifit/pf#IndoorAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Dry-bulb temperature of the air inside a space."@en .
+# 
+# https://w3id.org/posifit/pf#Kitchen
+<https://w3id.org/posifit/pf#Kitchen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Kitchen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/posifit/pf#Kitchen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/posifit/pf#Kitchen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#Room> .
+<https://w3id.org/posifit/pf#Kitchen> <http://www.w3.org/2000/01/rdf-schema#label> "kitchen"@en .
+<https://w3id.org/posifit/pf#Kitchen> <http://www.w3.org/2004/02/skos/core#definition> "A room of a dwelling used for preparing food."@en .
+# 
+# https://w3id.org/posifit/pf#MeasurementPoint
+<https://w3id.org/posifit/pf#MeasurementPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#MeasurementPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Class> .
+<https://w3id.org/posifit/pf#MeasurementPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Entity> .
+<https://w3id.org/posifit/pf#MeasurementPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Point> .
+<https://w3id.org/posifit/pf#MeasurementPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://brickschema.org/schema/Brick/ref#TimeseriesReference> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick/ref#hasTimeseriesReference> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#MeasurementPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#unionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://saref.etsi.org/core/State> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://saref.etsi.org/core/Property> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/posifit/pf#measures> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#MeasurementPoint> <http://www.w3.org/2000/01/rdf-schema#label> "measurement point"@en .
+<https://w3id.org/posifit/pf#MeasurementPoint> <http://www.w3.org/2004/02/skos/core#definition> "A named stream of measurements produced by a device for one quantity, carrying a reference to the timeseries held outside the graph."@en .
+# 
+# https://w3id.org/posifit/pf#OutdoorAirTemperature
+<https://w3id.org/posifit/pf#OutdoorAirTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#OutdoorAirTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#OutdoorAirTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#AirTemperature> .
+<https://w3id.org/posifit/pf#OutdoorAirTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "outdoor air temperature"@en .
+<https://w3id.org/posifit/pf#OutdoorAirTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Dry-bulb temperature of the outdoor air at a site."@en .
+# 
+# https://w3id.org/posifit/pf#PVSystem
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Class> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Collection> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Electrical_System> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Energy_Generation_System> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Energy_System> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Entity> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#PV_Generation_System> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#System> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#MeasurementPoint> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick#hasPoint> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2000/01/rdf-schema#label> "PV system"@en .
+<https://w3id.org/posifit/pf#PVSystem> <http://www.w3.org/2004/02/skos/core#definition> "A photovoltaic installation on a building, converting incident solar radiation into electricity fed to the building or to storage."@en .
+# 
+# https://w3id.org/posifit/pf#PowerFactor
+<https://w3id.org/posifit/pf#PowerFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#PowerFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#PowerFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/UNITLESS> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#PowerFactor> <http://www.w3.org/2000/01/rdf-schema#label> "power factor"@en .
+<https://w3id.org/posifit/pf#PowerFactor> <http://www.w3.org/2004/02/skos/core#definition> "Ratio of active to apparent power at a metering point, between zero and one."@en .
+# 
+# https://w3id.org/posifit/pf#RadiatorSurfaceTemperature
+<https://w3id.org/posifit/pf#RadiatorSurfaceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#RadiatorSurfaceTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#RadiatorSurfaceTemperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/DEG_C> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#RadiatorSurfaceTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "radiator surface temperature"@en .
+<https://w3id.org/posifit/pf#RadiatorSurfaceTemperature> <http://www.w3.org/2004/02/skos/core#definition> "Temperature of the heat-emitting surface of a radiator."@en .
+# 
+# https://w3id.org/posifit/pf#RatedEnergyCapacity
+<https://w3id.org/posifit/pf#RatedEnergyCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#RatedEnergyCapacity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#RatedEnergyCapacity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/KiloW-HR> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#RatedEnergyCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "rated energy capacity"@en .
+<https://w3id.org/posifit/pf#RatedEnergyCapacity> <http://www.w3.org/2004/02/skos/core#definition> "Nameplate energy a storage system holds when full, as declared by its manufacturer."@en .
+# 
+# https://w3id.org/posifit/pf#ReactivePower
+<https://w3id.org/posifit/pf#ReactivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ReactivePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ReactivePower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/V-A_Reactive> .
+<http://qudt.org/vocab/unit/V-A_Reactive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ReactivePower> <http://www.w3.org/2000/01/rdf-schema#label> "reactive power"@en .
+<https://w3id.org/posifit/pf#ReactivePower> <http://www.w3.org/2004/02/skos/core#definition> "Power oscillating between source and reactive load at a metering point, doing no net work."@en .
+# 
+# https://w3id.org/posifit/pf#RelativeHumidity
+<https://w3id.org/posifit/pf#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/PERCENT> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "relative humidity"@en .
+<https://w3id.org/posifit/pf#RelativeHumidity> <http://www.w3.org/2004/02/skos/core#definition> "Ratio of the water vapour present in the air to the amount that would saturate it at the same temperature."@en .
+# 
+# https://w3id.org/posifit/pf#Room
+<https://w3id.org/posifit/pf#Room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Room> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Room> .
+<https://w3id.org/posifit/pf#Room> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Space> .
+<https://w3id.org/posifit/pf#Room> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/posifit/pf#Room> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/posifit/pf#Room> <http://www.w3.org/2000/01/rdf-schema#label> "room"@en .
+<https://w3id.org/posifit/pf#Room> <http://www.w3.org/2004/02/skos/core#definition> "A single enclosed room within a dwelling."@en .
+# 
+# https://w3id.org/posifit/pf#RoomComfortSensor
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Sensor> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#Sensor> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#CO2Concentration> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#IndoorAirTemperature> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#RelativeHumidity> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2000/01/rdf-schema#label> "room comfort sensor"@en .
+<https://w3id.org/posifit/pf#RoomComfortSensor> <http://www.w3.org/2004/02/skos/core#definition> "A sensor mounted in a dwelling space, measuring indoor air temperature, relative humidity and CO2 concentration."@en .
+# 
+# https://w3id.org/posifit/pf#Sensor
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Sensor> .
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#MeasurementPoint> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick#hasPoint> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "sensor"@en .
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Sensor> .
+<https://w3id.org/posifit/pf#Sensor> <http://www.w3.org/2004/02/skos/core#definition> "A device measuring a physical property of a building space."@en .
+# 
+# https://w3id.org/posifit/pf#Site
+<https://w3id.org/posifit/pf#Site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Site> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Site> .
+<https://w3id.org/posifit/pf#Site> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/posifit/pf#Site> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/bot#hasZeroPoint> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#Site> <http://www.w3.org/2000/01/rdf-schema#label> "site"@en .
+<https://w3id.org/posifit/pf#Site> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Site> .
+<https://w3id.org/posifit/pf#Site> <http://www.w3.org/2004/02/skos/core#definition> "A location containing one or more buildings, georeferenced by a zero point."@en .
+# 
+# https://w3id.org/posifit/pf#SmartRadiatorValve
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Actuator> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Sensor> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#Sensor> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#MeasurementPoint> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick#hasPoint> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#TemperatureSetpoint> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/controls> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#ValvePosition> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/controls> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#BatteryLevel> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#HeatingOnOffState> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#IndoorAirTemperature> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#RelativeHumidity> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#WindowOpenCloseState> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2000/01/rdf-schema#label> "smart thermostatic radiator valve"@en .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Valve> .
+<https://w3id.org/posifit/pf#SmartRadiatorValve> <http://www.w3.org/2004/02/skos/core#definition> "A thermostatic radiator valve with a motorised actuator and an onboard radio, throttling the flow through one radiator against a temperature setpoint and measuring the conditions in the room."@en .
+# 
+# https://w3id.org/posifit/pf#StateOfCharge
+<https://w3id.org/posifit/pf#StateOfCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#StateOfCharge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#StateOfCharge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/PERCENT> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#StateOfCharge> <http://www.w3.org/2000/01/rdf-schema#label> "state of charge"@en .
+<https://w3id.org/posifit/pf#StateOfCharge> <http://www.w3.org/2004/02/skos/core#definition> "Energy stored in a battery system as a fraction of the energy it holds when full."@en .
+# 
+# https://w3id.org/posifit/pf#TemperatureSetpoint
+<https://w3id.org/posifit/pf#TemperatureSetpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#TemperatureSetpoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#TemperatureSetpoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#AirTemperature> .
+<https://w3id.org/posifit/pf#TemperatureSetpoint> <http://www.w3.org/2000/01/rdf-schema#label> "temperature setpoint"@en .
+<https://w3id.org/posifit/pf#TemperatureSetpoint> <http://www.w3.org/2004/02/skos/core#definition> "Target air temperature a controlling device works towards."@en .
+# 
+# https://w3id.org/posifit/pf#TenantSpace
+<https://w3id.org/posifit/pf#TenantSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#TenantSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://brickschema.org/schema/Brick#Space> .
+<https://w3id.org/posifit/pf#TenantSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Space> .
+<https://w3id.org/posifit/pf#TenantSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<https://w3id.org/posifit/pf#TenantSpace> <http://www.w3.org/2000/01/rdf-schema#label> "tenant space"@en .
+<https://w3id.org/posifit/pf#TenantSpace> <http://www.w3.org/2004/02/skos/core#definition> "A space held under a single tenancy."@en .
+# 
+# https://w3id.org/posifit/pf#ValvePosition
+<https://w3id.org/posifit/pf#ValvePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#ValvePosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#ValvePosition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/PERCENT> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#ValvePosition> <http://www.w3.org/2000/01/rdf-schema#label> "valve position"@en .
+<https://w3id.org/posifit/pf#ValvePosition> <http://www.w3.org/2004/02/skos/core#definition> "Degree to which a valve stands open, from fully closed to fully open."@en .
+# 
+# https://w3id.org/posifit/pf#Voltage
+<https://w3id.org/posifit/pf#Voltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Voltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#Voltage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/V> .
+<http://qudt.org/vocab/unit/V> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#Voltage> <http://www.w3.org/2000/01/rdf-schema#label> "voltage"@en .
+<https://w3id.org/posifit/pf#Voltage> <http://www.w3.org/2004/02/skos/core#definition> "Electric potential difference at a metering point."@en .
+# 
+# https://w3id.org/posifit/pf#WeatherStation
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#MeasurementPoint> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick#hasPoint> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#Illuminance> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#OutdoorAirTemperature> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#WindSpeed> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> "weather station"@en .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Weather_Station> .
+<https://w3id.org/posifit/pf#WeatherStation> <http://www.w3.org/2004/02/skos/core#definition> "A device at a site measuring the outdoor conditions a building is exposed to."@en .
+# 
+# https://w3id.org/posifit/pf#WindSpeed
+<https://w3id.org/posifit/pf#WindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#WindSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/posifit/pf#WindSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#hasValue> <http://qudt.org/vocab/unit/M-PER-SEC> .
+<http://qudt.org/vocab/unit/M-PER-SEC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#WindSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "wind speed"@en .
+<https://w3id.org/posifit/pf#WindSpeed> <http://www.w3.org/2004/02/skos/core#definition> "Speed of the air moving past a site."@en .
+# 
+# https://w3id.org/posifit/pf#Window
+<https://w3id.org/posifit/pf#Window> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#Window> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#Window> <http://www.w3.org/2000/01/rdf-schema#label> "window"@en .
+<https://w3id.org/posifit/pf#Window> <http://www.w3.org/2004/02/skos/core#definition> "An openable glazed opening in the envelope of a space."@en .
+# 
+# https://w3id.org/posifit/pf#WindowOpenCloseState
+<https://w3id.org/posifit/pf#WindowOpenCloseState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#WindowOpenCloseState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/State> .
+<https://w3id.org/posifit/pf#WindowOpenCloseState> <http://www.w3.org/2000/01/rdf-schema#label> "window open/close state"@en .
+<https://w3id.org/posifit/pf#WindowOpenCloseState> <http://www.w3.org/2004/02/skos/core#definition> "Whether a window stands open or closed."@en .
+# 
+# https://w3id.org/posifit/pf#WindowSensor
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Sensor> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/posifit/pf#Sensor> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#MeasurementPoint> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://brickschema.org/schema/Brick#hasPoint> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/posifit/pf#WindowOpenCloseState> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/observes> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#label> "window sensor"@en .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://brickschema.org/schema/Brick#Contact_Sensor> .
+<https://w3id.org/posifit/pf#WindowSensor> <http://www.w3.org/2004/02/skos/core#definition> "A contact sensor mounted on a window, measuring whether it stands open or closed."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/vocab/unit/A
+# 
+# http://qudt.org/vocab/unit/DEG_C
+# 
+# http://qudt.org/vocab/unit/HZ
+# 
+# http://qudt.org/vocab/unit/KiloW-HR
+# 
+# http://qudt.org/vocab/unit/LUX
+# 
+# http://qudt.org/vocab/unit/M-PER-SEC
+# 
+# http://qudt.org/vocab/unit/PERCENT
+# 
+# http://qudt.org/vocab/unit/PPM
+# 
+# http://qudt.org/vocab/unit/UNITLESS
+# 
+# http://qudt.org/vocab/unit/V
+# 
+# http://qudt.org/vocab/unit/V-A
+# 
+# http://qudt.org/vocab/unit/V-A_Reactive
+# 
+# http://qudt.org/vocab/unit/W
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
